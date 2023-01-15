@@ -4,7 +4,7 @@ export const Container = styled.div`
    
     width: 100%;
     max-width: 80%;
-    height: 47px;
+    height: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -15,14 +15,15 @@ export const Container = styled.div`
 export const Row = styled.div`
     display:flex;
     flex-direction: row;
+    padding-top: 110px;
     align-items: center;
 `;
 
 export const Wrapper = styled.div`
     background-color: #151515;
-    width: 100%;
-    height: 150px;
-    display:flex
+    width: 100vh;
+    height: 180px;
+    margin-left:0;
     justify-content: center;
     align-items: center
 `
@@ -59,15 +60,18 @@ export const MenuRight = styled.a`
 `
 
 export const UserPicture = styled.img`
-    width: 32px;
-    height: 32px;
-    border-radius: 22px;
-    border: 3px solid #FFFFFF;
+    width: 150px;
+    height: 150px;
+    
+   
+    
 `
 
 export const Input = styled.input`
     background: transparent;
     flex: 1;
+    font-size: 20px;
     border: 0;
     color: #FFFFFF;
+    margin-left:20px;
 `
