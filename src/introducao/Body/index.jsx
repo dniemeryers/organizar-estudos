@@ -1,16 +1,26 @@
 import React from 'react';
-import {Container, Label, Button} from './style'
+import {Container, Button, Input} from './style';
+import { Materias } from '../materia/index';
 
 const Body = () => {
-    return (
-        
-           <Container>
-            <Label value="Adicionar materia">Adicionar Matéria</Label>
-            <Button>+</Button>
 
-           </Container>
+       
+
+    return (
+        <>
+           <Container>
+            <Input placeholder="Adicionar matéria..."></Input>
+            <Button>+</Button>
+            <Materias>
+
+            </Materias>
+            </Container>
+           
+            
+           </>
 
     )
     }
 
+    
     export {Body}

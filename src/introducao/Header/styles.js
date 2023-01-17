@@ -2,30 +2,36 @@ import styled  from 'styled-components';
 
 export const Container = styled.div`
    
-    width: 100%;
+    
     max-width: 80%;
     height: 50px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin:auto;
 `
 
 export const Row = styled.div`
     display:flex;
-    flex-direction: row;
-    padding-top: 110px;
+    flex-direction: column;
+    height:100%;
+    padding-top:20px;
+    
     align-items: center;
+    margin:auto;
+    
 `;
 
 export const Wrapper = styled.div`
     background-color: #151515;
-    width: 100vh;
-    height: 180px;
+  
+    height: 220px;
     margin-left:0;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    margin:auto;
+    
 `
 
 export const BuscarInputContainer = styled.div`
