@@ -4,29 +4,31 @@ export const Container = styled.div`
    
     
     max-width: 80%;
-    height: 50px;
-
-    display: flex;
-    justify-content: space-between;
+    height: 120%px;
+    
     align-items: center;
     margin:auto;
+    
 `
 
 export const Row = styled.div`
+background-color:#1c1c1c;
     display:flex;
     flex-direction: column;
     height:100%;
     padding-top:20px;
-    
+    border-radius:10px;
     align-items: center;
     margin:auto;
+    margin-top:40px;
+    
     
 `;
 
 export const Wrapper = styled.div`
     background-color: #010101;
   
-    height: 220px;
+    height: 100vh;
     margin-left:0;
     justify-content: center;
     align-items: center;
@@ -76,8 +78,43 @@ export const UserPicture = styled.img`
 export const Input = styled.input`
     background-color: transparent;
     flex: 1;
-    font-size: 20px;
+    font-size: 22px;
+    
+    padding:20px 0 30px 0;
     border: 0;
     color: #FFFFFF;
     margin-left:20px;
+
+`
+export const Addimagen = styled.button`
+height:30px;
+width:30px;
+border-radius:50%;
+margin-left:-40px;
+font-size:20px;
+font-weight:bold;
+border:none;
+`
+export const Salvar = styled.button`
+width:130px;
+height:50px;
+backgrund-color:#6d6d6d;
+font-size:22px;
+font-weight:bold;
+border:none;
+border-radius:10px;
+`
+export const Buttons = styled.div`
+width:100%;
+display:flex;
+justify-content:space-around;
+padding:20px;
+`
+export const H1 = styled.h1`
+color white;
+font-size:22px;
+padding-top:20px;
+
+margin:0;
+text-align:center;
 `

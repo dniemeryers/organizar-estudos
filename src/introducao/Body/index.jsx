@@ -9,11 +9,11 @@ const Body = () => {
     return (
         <>
            <Container>
-            <Input placeholder="Adicionar matéria..."></Input>
-            <Button>+</Button>
-            <Materias>
-
-            </Materias>
+                <Input placeholder="Adicionar matéria..."></Input>
+                <Button>+</Button>
+                <Materias/>
+                
+            
             </Container>
            
             

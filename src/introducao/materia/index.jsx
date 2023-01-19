@@ -1,5 +1,5 @@
 
-import { Materia, Label, Input, Button } from "./style";
+import { Materia, Label, Input, Button,Container } from "./style";
 import { Atividades } from "../Atividades";
 
 const Materias = () => {
@@ -7,12 +7,17 @@ const Materias = () => {
     return(
         <>
         <Materia>
-            <Label>Matéria</Label>
-            <Input placeholder="Adicionar Atividades..."></Input>
-            <Button>+</Button>
-            <Atividades>
+            <Container>
+                <div>
+                    <Label>Matéria</Label>
+                    <Input placeholder="Adicionar Atividades..."></Input>
+                </div>
+                <Button>+</Button>
+            </Container>
+            <Atividades/>
 
-            </Atividades>
+
+           
 
         </Materia>
         </>

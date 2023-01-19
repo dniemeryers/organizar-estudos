@@ -1,13 +1,20 @@
 import styled from 'styled-components';
 
+
 export const Materia = styled.div`
 
 width: 90%;
 margin:20px;
 height: auto;
+padding-bottom:5px;
+justify-content:space-between;
 border-radius:5px;
-background-color: #4a4a4a;
+background-color: #1c1c1c;
 
+`
+export const Container = styled.div`
+display:flex;
+justify-content:space-between;
 `
 
 export const Label = styled.label`
@@ -33,5 +40,3 @@ border-radius:50%;
 margin-left: 10px;
 border:none;
 `
-
-
