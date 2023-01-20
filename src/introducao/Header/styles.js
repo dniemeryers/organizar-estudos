@@ -2,7 +2,7 @@ import styled  from 'styled-components';
 
 export const Container = styled.div`
    
-    
+    position:relative;
     max-width: 80%;
     height: 50px;
 
@@ -14,10 +14,8 @@ export const Container = styled.div`
 
 export const Row = styled.div`
     display:flex;
-    flex-direction: column;
     height:100%;
-    padding-top:20px;
-    
+    padding-top:80px;
     align-items: center;
     margin:auto;
     
@@ -80,4 +78,28 @@ export const Input = styled.input`
     border: 0;
     color: #FFFFFF;
     margin-left:20px;
+`
+
+export const Apresentacao = styled.div`
+heigth:120px;
+display:flex;
+flex-direction:column;
+`
+
+export const Label = styled.label`
+color: white;
+font-size:20px;
+margin:7px;
+`
+
+export const Voltar = styled.button`
+color:white;
+font-size:18px;
+height:50px;
+width:50px;
+background:transparent;
+border:none;
+position:absolute;
+left:-25px;
+top:10px;
 `

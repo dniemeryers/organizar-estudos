@@ -1,21 +1,38 @@
+import { useNavigate } from 'react-router-dom';
 import React from 'react'
 import usuario from '../../assets/minha-conta.png'
-import { Container, Wrapper,  Row, UserPicture, Input} from './styles';
+import { Container, Wrapper,  Row, UserPicture,Label, Apresentacao,Voltar } from './styles';
+import { Body } from '../Body/index'
 
 const Header = () => {
-  return (
-    <Wrapper>
-      <Container>
+
+  const navigate = useNavigate();
+
+    const voltar = () => {
+        navigate('/Inicio')
+
+    }
+  return (<>
+  
+     <Wrapper>
+        <Container>
+        <Voltar onClick={voltar}>Voltar</Voltar>
           <Row>
+            <div>
             <UserPicture src={usuario} alt="user_default"/>
-            
-            <Input placeholder='Informe seu nome...'/>
-            <Input placeholder= 'Semenstre ou Bimestre' />
-        
+            </div>
+            <Apresentacao>
+            <Label>nome</Label>
+            <Label>curso</Label>
+            <Label>semestre</Label>
+            </Apresentacao>
           </Row>
-      </Container>
-    </Wrapper>
-  )
+        </Container>
+     </Wrapper>
+    <Body/>
+
+
+    </>)
 }
 
 export { Header }
