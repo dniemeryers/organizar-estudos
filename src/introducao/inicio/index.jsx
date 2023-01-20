@@ -17,6 +17,7 @@ const Inicio = () => {
             </div>
             
             <Input placeholder='Informe seu nome...'/>
+            <Input placeholder='Informe o nome do curso... '/>
             <Input placeholder= 'Semenstre ou Bimestre' />
             <Buttons>
             <Salvar>SALVAR</Salvar>
