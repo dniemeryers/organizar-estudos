@@ -3,6 +3,7 @@ import React from 'react'
 import usuario from '../../assets/minha-conta.png'
 import { Container, Wrapper,  Row, UserPicture,Label, Apresentacao,Voltar } from './styles';
 import { Body } from '../Body/index'
+import {Inicio} from '../inicio/'
 
 const Header = () => {
 
@@ -10,8 +11,10 @@ const Header = () => {
 
     const voltar = () => {
         navigate('/Inicio')
-
     }
+
+   
+
   return (<>
   
      <Wrapper>
@@ -22,7 +25,7 @@ const Header = () => {
             <UserPicture src={usuario} alt="user_default"/>
             </div>
             <Apresentacao>
-            <Label>nome</Label>
+            <Label>{this.Inicio.state.nome}</Label>
             <Label>curso</Label>
             <Label>semestre</Label>
             </Apresentacao>
