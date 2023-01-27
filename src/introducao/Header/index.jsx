@@ -1,11 +1,11 @@
 import { useNavigate } from 'react-router-dom';
-import React from 'react'
+import React, {useState} from 'react'
 import usuario from '../../assets/minha-conta.png'
 import { Container, Wrapper,  Row, UserPicture,Label, Apresentacao,Voltar } from './styles';
 import { Body } from '../Body/index'
 import {Inicio} from '../inicio/'
 
-const Header = () => {
+function Header (props) {
 
   const navigate = useNavigate();
 
@@ -25,7 +25,7 @@ const Header = () => {
             <UserPicture src={usuario} alt="user_default"/>
             </div>
             <Apresentacao>
-            <Label>{this.Inicio.state.nome}</Label>
+            <Label value={props.Inicio.setName.value}>nome</Label>
             <Label>curso</Label>
             <Label>semestre</Label>
             </Apresentacao>

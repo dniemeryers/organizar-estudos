@@ -3,7 +3,9 @@ import { useNavigate  } from "react-router-dom";
 import usuario from '../../assets/minha-conta.png'
 import { Container, Wrapper,  Row, UserPicture, Input, Addimagen, Salvar,Buttons,H1} from './styles';
 
-const Inicio = () => {
+
+
+function Inicio(props) {
 
     const [nome, setNome] = useState(''); 
     const [curso, setCurso] = useState('');
@@ -15,6 +17,15 @@ const Inicio = () => {
     const ir = () => {
         navigate('/Header')
     
+    }
+
+    const usuario ={nome,curso,semestre};
+
+    function Limpar(){
+
+      setCurso=('');
+      setNome=('');
+      setSemestre=('');
     }
 
    
@@ -30,12 +41,12 @@ const Inicio = () => {
               <UserPicture src={usuario} alt="user_default"/>
               <Addimagen>+</Addimagen>
             </div>
-            <Input value={nome} onChange={(e) => setNome(e.target.value)} placeholder='Informe seu nome...'/>
-            <Input value={curso} onChange={(e) => setCurso(e.target.value)}placeholder='Informe o nome do curso... '/>
-            <Input value={semestre} onChange={(e) => setSemestre(e.target.value)} placeholder='Semenstre ou Bimestre' />
+            <Input value={nome} onChange={event => setNome(event.target.value)} placeholder='Informe seu nome...'/>
+            <Input value={curso} onChange={event => setCurso(event.target.value)}placeholder='Informe o nome do curso... '/>
+            <Input value={semestre} onChange={event => setSemestre(event.target.value)} placeholder='Semenstre ou Bimestre' />
             <Buttons>
-              <Salvar onClick={ir}>SALVAR</Salvar>
-              <Salvar>LIMPAR</Salvar>
+              <Salvar type="submit" onClick={ir}>SALVAR</Salvar>
+              <Salvar onClick={Limpar}>LIMPAR</Salvar>
             </Buttons>
           </Row>
       </Container>
