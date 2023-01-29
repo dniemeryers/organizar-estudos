@@ -5,15 +5,16 @@ import { Container, Wrapper,  Row, UserPicture,Label, Apresentacao,Voltar } from
 import { Body } from '../Body/index'
 import {Inicio} from '../inicio/'
 
-function Header (props) {
-
+function Header ({nome,curso,semestre}) {
+  
   const navigate = useNavigate();
 
     const voltar = () => {
         navigate('/Inicio')
     }
 
-   
+    
+
 
   return (<>
   
@@ -25,9 +26,9 @@ function Header (props) {
             <UserPicture src={usuario} alt="user_default"/>
             </div>
             <Apresentacao>
-            <Label value={props.Inicio.setName.value}>nome</Label>
-            <Label>curso</Label>
-            <Label>semestre</Label>
+            <Label>{nome}</Label>
+            <Label>{curso}</Label>
+            <Label>{semestre}</Label>
             </Apresentacao>
           </Row>
         </Container>
