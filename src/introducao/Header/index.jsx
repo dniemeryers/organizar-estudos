@@ -7,6 +7,8 @@ import {Inicio} from '../inicio/'
 
 function Header ({nome,curso,semestre}) {
   
+ 
+
   const navigate = useNavigate();
 
     const voltar = () => {
