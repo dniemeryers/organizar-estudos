@@ -12,13 +12,8 @@ import { useState } from "react";
 
 function App() {
 
-  const inicio = Inicio()
+  
 
-  function inicio([nome,curso,semestre]){
-    inicio()
-  }
- 
-console.log()
   return (
     <>
 
@@ -28,7 +23,7 @@ console.log()
         <Route path="/" element={<Inicio />} />
         <Route path="/Inicio" element={<Inicio  />} />
         <Route path="/Body" element={<Body />} />
-        <Route path="/Header" element={<Header nome={inicio.nome} curso={inicio.curso} semestre={inicio.semestre} />}/>
+        <Route path="/Header" element={<Header nome={'Diego'} curso={'ads'} semestre={'2 periodo'} />}/>
 
      </Routes >
     </Router>
