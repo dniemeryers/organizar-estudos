@@ -5,7 +5,7 @@ import { Container, Wrapper,  Row, UserPicture, Input, Addimagen, Salvar,Buttons
 
 
 
-function Inicio() {
+function Inicio({onAddUser}) {
 
     const [nome, setNome] = useState(''); 
     const [curso, setCurso] = useState('');
@@ -15,13 +15,14 @@ function Inicio() {
 
     const navigate = useNavigate();
     function ir(){
-        navigate('/Header')
+        navigate('/Body')
             
     }
 
     function handleSave(){
       const data = {nome, curso, semestre}
-      console.log(data);
+      console.log(data)
+      onAddUser(data)
      ;
     }
 
@@ -31,6 +32,7 @@ function Inicio() {
       handleSave();
       
     }
+    
    
 
   return (

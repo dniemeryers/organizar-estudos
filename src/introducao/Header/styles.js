@@ -86,8 +86,10 @@ display:flex;
 flex-direction:column;
 `
 
-export const Label = styled.label`
+export const Inputdados = styled.input`
 color: white;
+background-color:black;
+border:none;
 font-size:20px;
 margin:7px;
 `

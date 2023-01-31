@@ -1,19 +1,11 @@
-import { useNavigate } from 'react-router-dom';
-import React, {useState} from 'react'
 import usuario from '../../assets/minha-conta.png'
-import { Container, Wrapper,  Row, UserPicture,Label, Apresentacao,Voltar } from './styles';
-import { Body } from '../Body/index'
-import {Inicio} from '../inicio/'
+import { Container, Wrapper,  Row, UserPicture,Inputdados, Apresentacao } from './styles';
+
+
 
 function Header ({nome,curso,semestre}) {
   
  
-
-  const navigate = useNavigate();
-
-    const voltar = () => {
-        navigate('/Inicio')
-    }
 
     
 
@@ -22,20 +14,20 @@ function Header ({nome,curso,semestre}) {
   
      <Wrapper>
         <Container>
-        <Voltar onClick={voltar}>Voltar</Voltar>
+       
           <Row>
             <div>
             <UserPicture src={usuario} alt="user_default"/>
             </div>
             <Apresentacao>
-            <Label>{nome}</Label>
-            <Label>{curso}</Label>
-            <Label>{semestre}</Label>
+            <Inputdados defaultValue={nome} placeholder={'Informe seu nome...'}></Inputdados>
+            <Inputdados defaultValue={curso} placeholder={'Informe seu curso...'}></Inputdados>
+            <Inputdados defaultValue={semestre} placeholder={'Informe seu período...'}></Inputdados>
             </Apresentacao>
           </Row>
         </Container>
      </Wrapper>
-    <Body/>
+    
 
 
     </>)

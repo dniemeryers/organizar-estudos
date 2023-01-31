@@ -12,8 +12,15 @@ import { useState } from "react";
 
 function App() {
 
-  
+  const [dados, setDados] = useState([])
 
+  function handleSavedados(usuarios){
+    let newDados = dados
+   newDados.push(usuarios)
+   setDados(newDados)
+    
+  }
+ 
   return (
     <>
 
@@ -21,9 +28,9 @@ function App() {
      
      <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/Inicio" element={<Inicio  />} />
-        <Route path="/Body" element={<Body />} />
-        <Route path="/Header" element={<Header nome={'Diego'} curso={'ads'} semestre={'2 periodo'} />}/>
+        <Route path="/Inicio" element={<Inicio onAddUser={handleSavedados} />} />
+        <Route path="/Body" element={<Body dados={dados} />} />
+        <Route path="/Header"  element={<Header/>}/>
 
      </Routes >
     </Router>
