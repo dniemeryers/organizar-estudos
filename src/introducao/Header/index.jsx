@@ -20,9 +20,9 @@ function Header ({nome,curso,semestre}) {
             <UserPicture src={usuario} alt="user_default"/>
             </div>
             <Apresentacao>
-            <Inputdados defaultValue={nome} placeholder={'Informe seu nome...'}></Inputdados>
-            <Inputdados defaultValue={curso} placeholder={'Informe seu curso...'}></Inputdados>
-            <Inputdados defaultValue={semestre} placeholder={'Informe seu período...'}></Inputdados>
+            <Inputdados defaultValue={nome} placeholder={'Informe seu nome...'}/>
+            <Inputdados defaultValue={curso} placeholder={'Informe seu curso...'}/>
+            <Inputdados defaultValue={semestre} placeholder={'Informe seu período...'}/>
             </Apresentacao>
           </Row>
         </Container>
@@ -30,7 +30,8 @@ function Header ({nome,curso,semestre}) {
     
 
 
-    </>)
+    </>
+    )
 }
 
 export { Header }

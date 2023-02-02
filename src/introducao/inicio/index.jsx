@@ -7,9 +7,9 @@ import { Container, Wrapper,  Row, UserPicture, Input, Addimagen, Salvar,Buttons
 
 function Inicio({onAddUser}) {
 
-    const [nome, setNome] = useState(''); 
-    const [curso, setCurso] = useState('');
-    const [semestre, setSemestre] = useState(''); 
+    const [nome, setNome] = useState('')
+    const [curso, setCurso] = useState('')
+    const [semestre, setSemestre] = useState('')
 
    
 
@@ -23,7 +23,7 @@ function Inicio({onAddUser}) {
       const data = {nome, curso, semestre}
       console.log(data)
       onAddUser(data)
-     ;
+     
     }
 
     

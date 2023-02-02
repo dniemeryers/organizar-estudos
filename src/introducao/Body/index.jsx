@@ -3,15 +3,16 @@ import {Container, Button, Input} from './style';
 import { Materias } from '../materia/index';
 import { Header } from '../Header';
 
-const Body = ({dados}) => {
+function Body ({dados}){
 
        
 
     return (
         <>  
-            {dados.map((usuarios,index)=>(
-            <Header key={index} nome={usuarios.nome} curso={usuarios.curso} semestre={usuarios.semestre}/>
+            {dados.map((user, index)=>(
+            <Header key={index} nome={user.nome} curso={user.curso} semestre={user.semestre} />
             ))}
+           
            <Container>
                 <Input placeholder="Adicionar matéria..."></Input>
                 <Button>+</Button>
