@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Atividade, Data, DiasFalta, Descricao, Descricaolabel, Container2} from './style'
+import {Container, Atividade, Data, DiasFalta, Descricao, Container2} from './style'
 
 const Atividades = () => {
 
@@ -17,8 +17,8 @@ const Atividades = () => {
             <DiasFalta>10 dias</DiasFalta>
 
             </Container>
-            <Descricaolabel> Descrição</Descricaolabel>
-            <Descricao>
+            
+            <Descricao placeholder='Descrição...'>
                 
             </Descricao>
         </Container2>

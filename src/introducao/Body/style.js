@@ -6,7 +6,7 @@ margin-top:-1px;
 padding-top: 20px;
 background-color: #010101;
 width: 100%;
-height: 100vh;
+height:auto;
 
 `
 

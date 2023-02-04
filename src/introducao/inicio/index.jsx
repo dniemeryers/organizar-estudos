@@ -28,8 +28,9 @@ function Inicio({onAddUser}) {
 
     
     function click (){
-      ir();
-      handleSave();
+      ir()
+      handleSave()
+          
       
     }
     

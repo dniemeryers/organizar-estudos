@@ -3,7 +3,7 @@ import { Container, Wrapper,  Row, UserPicture,Inputdados, Apresentacao } from '
 
 
 
-function Header ({nome,curso,semestre}) {
+export const Header = ({nome,curso,semestre}) =>{
   
  
 
@@ -34,4 +34,4 @@ function Header ({nome,curso,semestre}) {
     )
 }
 
-export { Header }
+

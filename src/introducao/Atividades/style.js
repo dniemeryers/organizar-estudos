@@ -8,32 +8,38 @@ width:100%;
 
 `
 export const Container2 = styled.div`
-background-color:#4a4a4a;
+background-color:#1c1c1c;
 margin:10px;
 border-radius:5px;
 `
 export const Atividade =styled.label`
 color:white;
+
+font-size:20px;
 margin:5px 15px 0 5px;
 `
 
 export const Data = styled.input`
-width: 80px;
+width: 120px;
+background-color:#1c1c1c;
+border:none;
+color:white;
+font-size:16px;
+
 
 `
 
 export const DiasFalta = styled.label`
 color:white;
-position:absolut;
-right:0px;
+font-size:20px;
 `
 export const Descricao = styled.textarea`
 width:95%;
-height:5em;
-margin:5px;
-`
-export const Descricaolabel = styled.label`
 color:white;
-margin:auto;
+font-weight:bold;
+font-size:20px;
+height:auto;
 margin:5px;
+border:none;
+background-color:transparent;
 `

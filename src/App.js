@@ -15,7 +15,7 @@ function App() {
   const [dados, setDados] = useState([]);
 
   function handleSavedados(user){
-    let newDados = dados
+    let newDados = [...dados]
    newDados.push(user)
    setDados(newDados)
     
