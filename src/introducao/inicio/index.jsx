@@ -14,31 +14,30 @@ function Inicio({onAddUser}) {
    
 
     const navigate = useNavigate();
+
     function ir(){
-        navigate('/Body')
-            
+        navigate('/Body')           
     }
 
     function handleSave(){
       const data = {nome, curso, semestre}
-      console.log(data)
-      onAddUser(data)
-     
+      onAddUser(data)     
     }
 
     
-    function click (){
+    function click(){
       ir()
-      handleSave()
-          
-      
+      handleSave()      
     }
-    
-   
 
+    function limpar(){
+      setNome('')
+      setCurso('')
+      setSemestre('')
+    }
+       
   return (
-  <>
-   
+  <>   
     <Wrapper>    
       <Container>
           <H1>Organizando os Estudos</H1>
@@ -52,7 +51,7 @@ function Inicio({onAddUser}) {
             <Input value={semestre} onChange={event => setSemestre(event.target.value)} placeholder='Semenstre ou Bimestre' />
             <Buttons>
               <Salvar type="submit" onClick={click}>SALVAR</Salvar>
-              <Salvar>LIMPAR</Salvar>
+              <Salvar onClick={limpar}>LIMPAR</Salvar>
             </Buttons>
           </Row>
       </Container>

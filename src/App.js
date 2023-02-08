@@ -19,14 +19,11 @@ function App() {
   function handleSavedados(user){
     let newDados = [...dados]
    newDados.push(user)
-   setDados(newDados)
-    
+   setDados(newDados)    
   }
-
   
     return (
       <>
-
         <Router> 
         <Routes>
             <Route path="/"       element={<Inicio onAddUser={handleSavedados}/>}/>
@@ -34,10 +31,8 @@ function App() {
             <Route path="/Body"   element={<Body dados={dados}/>}/>
             <Route path="/Header" element={<Header/>}/>
           </Routes >
-        </Router>
-        
+        </Router>       
       </>
     );
   }
-
 export default App;

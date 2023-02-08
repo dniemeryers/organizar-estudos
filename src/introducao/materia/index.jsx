@@ -1,40 +1,47 @@
 
 import { useState } from "react";
 
-import { Materia, Input, Button, ButtonRemove, Container,Div1 } from "./style";
+import { Materia, Input, Input1, Button, ButtonRemove, Container,Div1,ButtonLimpar } from "./style";
 import { Atividades } from "../Atividades";
 
 const Materias = ({materia}) => {
+
+    var id = id+1;
+
     const [inAtividade, setInatividade] = useState("")
     const [atividade, setAtividade] = useState([])
 
-    function handleSave(data2){
-        const atividade = {inAtividade}
-        console.log(atividade)
-        setAtividade(prevAtividade => [inAtividade, ...prevAtividade])
-        setInatividade("")
-        
+    function limpar(){
+       setAtividade([])
     }
+
+    function handleSave(data2){       
+        console.log(atividade)
+        setAtividade(prevAtividade => [...prevAtividade,inAtividade])
+        setInatividade("")        
+    }
+
+    
 
     return(
         <>
-        <Materia>
-            <Container>               
-                <Div1>
-                    <Input defaultValue={materia}></Input>
-                    <ButtonRemove>x</ButtonRemove>
-                    <div>
-                        <Input value={inAtividade} onChange={event => setInatividade(event.target.value)}placeholder="Adicionar Atividades..."></Input>
-                        <Button onClick={handleSave}>+</Button>
-                    </div>
-                </Div1>
-            </Container>
-           {atividade.map((data2,index)=>(
-           <Atividades key={index} atividade={data2}/>
-           ))} 
-        </Materia>
+            <Materia>
+                <Container>               
+                    <Div1>
+                        <Input1 defaultValue={materia} placeholder="Matéria"></Input1>
+                        <ButtonRemove>x</ButtonRemove>
+                        <div>
+                            <Input value={inAtividade} onChange={event => setInatividade(event.target.value)}placeholder="Adicionar Atividades..."></Input>
+                            <Button onClick={handleSave}>+</Button>
+                        </div>
+                    </Div1>
+                </Container>
+            {atividade.map((data2,id)=>(
+            <Atividades key={id} atividade={data2}/>
+            ))} 
+            <ButtonLimpar onClick={limpar}>Limpar lista</ButtonLimpar>
+            </Materia>
         </>
     )
 }
-
 export {Materias}

@@ -28,6 +28,15 @@ export const Input = styled.input`
     color: white;
     margin-left:20px;
 `
+export const Input1 = styled.input`
+    background: transparent;
+    flex: 1;
+    font-size: 20px;
+    border: 0;
+    color: white;
+    margin-left:20px;
+    padding-bottom:20px;
+`
 
 export const Button = styled.button`
 color:white;
@@ -53,7 +62,18 @@ border:none;
 `
 export const Div1 = styled.div`
 position:relative;
-
 justify-content:space-beteween;
-
 `
+export const ButtonLimpar = styled.button`
+display:flex;
+float:rigth;
+justify-content:flex-end;
+background-color:red;
+border-radius:10px;
+border:none;
+font-size:20px;
+font-weight:bolder;
+color:white;
+margin-top:10px;
+`
+

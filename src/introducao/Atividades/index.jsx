@@ -11,7 +11,7 @@ const Atividades = ({atividade}) => {
         <Container2>
             <Container>
                 <div>
-                  <Atividade defaultValue={atividade}></Atividade>
+                  <Atividade defaultValue={atividade} placeholder="Atividade"></Atividade>
                   <Data type="date"></Data>
                 </div>
             <DiasFalta>10 dias</DiasFalta>
