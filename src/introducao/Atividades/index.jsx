@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Container, Atividade, Data, DiasFalta, Descricao, Container2} from './style'
 
-const Atividades = () => {
+const Atividades = ({atividade}) => {
 
        
 
@@ -11,7 +11,7 @@ const Atividades = () => {
         <Container2>
             <Container>
                 <div>
-                  <Atividade>Atividade</Atividade>
+                  <Atividade defaultValue={atividade}></Atividade>
                   <Data type="date"></Data>
                 </div>
             <DiasFalta>10 dias</DiasFalta>

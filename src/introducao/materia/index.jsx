@@ -5,22 +5,16 @@ import { Materia, Input, Button, ButtonRemove, Container,Div1 } from "./style";
 import { Atividades } from "../Atividades";
 
 const Materias = ({materia}) => {
-
+    const [inAtividade, setInatividade] = useState("")
     const [atividade, setAtividade] = useState([])
 
-    function handleSave(data){
-        let newAtividade = [...atividade]
-        newAtividade.unshift(data)
-        setAtividade(newAtividade)
+    function handleSave(data2){
+        const atividade = {inAtividade}
+        console.log(atividade)
+        setAtividade(prevAtividade => [inAtividade, ...prevAtividade])
+        setInatividade("")
+        
     }
-
-    const handleRemoveRepo = (itemToRemove) => {
-        setAtividade(atividade.filter(data => data !== itemToRemove));
-    }
-
-    
-
-
 
     return(
         <>
@@ -28,15 +22,15 @@ const Materias = ({materia}) => {
             <Container>               
                 <Div1>
                     <Input defaultValue={materia}></Input>
-                    <ButtonRemove onClick={()=>handleRemoveRepo()}>x</ButtonRemove>
+                    <ButtonRemove>x</ButtonRemove>
                     <div>
-                        <Input placeholder="Adicionar Atividades..."></Input>
+                        <Input value={inAtividade} onChange={event => setInatividade(event.target.value)}placeholder="Adicionar Atividades..."></Input>
                         <Button onClick={handleSave}>+</Button>
                     </div>
                 </Div1>
             </Container>
-           {atividade.map((data,item)=>(
-           <Atividades key={item} atividade={'atividade'}/>
+           {atividade.map((data2,index)=>(
+           <Atividades key={index} atividade={data2}/>
            ))} 
         </Materia>
         </>

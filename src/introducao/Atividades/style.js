@@ -12,9 +12,11 @@ background-color:#1c1c1c;
 margin:10px;
 border-radius:5px;
 `
-export const Atividade =styled.label`
+export const Atividade =styled.input`
 color:white;
-
+background-color:transparent;
+border:none;
+width:110px;
 font-size:20px;
 margin:5px 15px 0 5px;
 `
