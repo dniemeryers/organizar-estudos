@@ -8,6 +8,9 @@ export const Body = ({dados})=>{
         const [inMateria, setInmateria] = useState("")
         const [materia, setMateria,] = useState([])
 
+        var id = 0;
+        id = id+1;
+
         
      
        /* function saveMateria(data){ 
@@ -25,6 +28,12 @@ export const Body = ({dados})=>{
        function click(){   
         saveMateria()
        }
+       const fechar = () => {
+        setMateria((current)=>
+        current.pop((materia)=> materia.index !== 2)
+        );
+        materia.splice()
+       }
 
     return (
         <>  
@@ -35,7 +44,7 @@ export const Body = ({dados})=>{
                 <Input value={inMateria} onChange={event => setInmateria(event.target.value)} placeholder="Adicionar matéria..."></Input>                
                 <Button onClick={click}>+</Button>
                 {materia.map((data,index)=>(
-                <Materias key={index}  materia={data}/>
+                <Materias key={index}  materia={data} fechar={fechar}/>
                 ))}
             </Container>
            </>

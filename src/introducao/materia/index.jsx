@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Materia, Input, Input1, Button, ButtonRemove, Container,Div1,ButtonLimpar } from "./style";
 import { Atividades } from "../Atividades";
 
-const Materias = ({materia}) => {
+const Materias = ({materia,fechar}) => {
 
     var id = id+1;
 
@@ -13,6 +13,7 @@ const Materias = ({materia}) => {
 
     function limpar(){
        setAtividade([])
+       setInatividade('')
     }
 
     function handleSave(data2){       
@@ -21,25 +22,23 @@ const Materias = ({materia}) => {
         setInatividade("")        
     }
 
-    
-
     return(
         <>
             <Materia>
                 <Container>               
                     <Div1>
                         <Input1 defaultValue={materia} placeholder="Matéria"></Input1>
-                        <ButtonRemove>x</ButtonRemove>
                         <div>
                             <Input value={inAtividade} onChange={event => setInatividade(event.target.value)}placeholder="Adicionar Atividades..."></Input>
                             <Button onClick={handleSave}>+</Button>
                         </div>
                     </Div1>
                 </Container>
-            {atividade.map((data2,id)=>(
-            <Atividades key={id} atividade={data2}/>
-            ))} 
-            <ButtonLimpar onClick={limpar}>Limpar lista</ButtonLimpar>
+                {atividade.map((data2,id)=>(
+                    <Atividades key={id} atividade={data2}/>
+                 ))} 
+                <ButtonLimpar onClick={limpar}>Limpar lista</ButtonLimpar>
+                <ButtonRemove onClick={fechar}>x</ButtonRemove>
             </Materia>
         </>
     )

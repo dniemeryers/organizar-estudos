@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 
 export const Materia = styled.div`
-
+position:relative;
 width: 90%;
 margin:20px;
 height: auto;
 padding-top:10px;
 padding-bottom:5px;
-
 border-radius:5px;
 background-color:#4a4a4a;
 
@@ -35,14 +34,16 @@ export const Input1 = styled.input`
     border: 0;
     color: white;
     margin-left:20px;
-    padding-bottom:20px;
+    margin-bottom:20px;
+    
 `
 
 export const Button = styled.button`
 color:white;
 background-color:#1c1c1c;
 heigth:20px;
-width:20px;
+width:30px;
+font-size:22px;
 font-weight:bolder;
 border-radius:50%;
 margin-left: 10px;
@@ -51,12 +52,14 @@ border:none;
 export const ButtonRemove = styled.button`
 color:white;
 position:absolute;
-right: -50px;
+top:0;
+right:0;
 background-color:red;
+font-size:22px;
 heigth:20px;
-width:20px;
+width:30px;
 font-weight:bolder;
-border-radius:50%;
+border-radius:5px;
 margin-left: 10px;
 border:none;
 `
@@ -65,15 +68,13 @@ position:relative;
 justify-content:space-beteween;
 `
 export const ButtonLimpar = styled.button`
-display:flex;
-float:rigth;
-justify-content:flex-end;
 background-color:red;
-border-radius:10px;
+border-radius:5px;
 border:none;
 font-size:20px;
 font-weight:bolder;
 color:white;
 margin-top:10px;
+margin-left:13px;
 `
 

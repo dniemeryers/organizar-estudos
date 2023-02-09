@@ -19,8 +19,9 @@ margin-left 20px;
 export const Button = styled.button`
 color:#1c1c1c;
 background-color:#4a4a4a
-heigth:20px;
-width:20px;
+heigth:30px;
+width:30px;
+font-size:22px;
 font-weight:bolder;
 border-radius:50%;
 margin-left: 10px;
@@ -35,7 +36,8 @@ width: 120px;
 export const Input = styled.input`
     background: transparent;
     flex: 1;
-    font-size: 20px;
+    heigth:50px;
+    font-size: 22px;
     border: 0;
     color: #FFFFFF;
     margin-left:20px;
