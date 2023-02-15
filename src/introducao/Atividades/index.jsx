@@ -12,26 +12,30 @@ const Atividades = ({atividade}) => {
     let dateInput = new Date(dataAtividade)   
    
   
-   var dy = newDate.getDate();
-   var mt = newDate.getMonth()+1;
-   var yr = newDate.getFullYear();
-   const today = `${yr}-${mt}-${dy}`;
-   console.log(today)
-   
+   var dy = dateInput.getDate()-newDate.getDate();
+   var mt = dateInput.getMonth()-newDate.getMonth();
+   let data ;
 
-   
+   if(dy<0){
+    dy = Math.abs(dy)
+   }
+   if(mt<0){
+    mt = Math.abs(mt)
+   }
        
-  
-   
-
-let data ;
-        if (dateInput.getMonth()-newDate.getMonth()===0){
-           data = `${dateInput.getDate() - newDate.getDate()} dias`
-           } else if (dateInput.getMonth() - newDate.getMonth()===1) {
-            data = `${dateInput.getMonth() - newDate.getMonth()} mês e ${dateInput.getDate()-newDate.getDate()} dias`
-                } else {
-                   data = `${dateInput.getMonth() - newDate.getMonth()} meses e ${dateInput.getDate() - newDate.getDate()} dias`
-                }
+    if(dateInput<newDate){
+        data=`Data inválida`
+            }else if (mt===0 && dy===1){
+                data= `${dy} dia`
+                    }else if (mt===0){
+                        data = `${dy} dias`
+                        }else if(mt===1 && dy===1){
+                            data = `${mt} mês e ${dy} dia`
+                            }else if (mt===1) {
+                                data = `${mt} mês e ${dy} dias`
+                                    }else{
+                                    data = `${mt} meses e ${dy} dias`
+                                    }
                 
             
     return (
@@ -40,7 +44,7 @@ let data ;
             <Container>
                 <div>
                   <Atividade defaultValue={atividade} placeholder="Atividade"></Atividade>
-                  <Data defaultValue={dataAtividade} onChange={event => setDataatividade(event.target.value)}type="date"></Data>
+                  <Data min="2023-02-15" max="2023-12-31"value={dataAtividade} onChange={event => setDataatividade(event.target.value)}type="date"></Data>
                 </div>
             <DiasFalta>{data}</DiasFalta>
             </Container>           
