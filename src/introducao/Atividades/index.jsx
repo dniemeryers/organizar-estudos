@@ -25,17 +25,19 @@ const Atividades = ({atividade}) => {
        
     if(dateInput<newDate){
         data=`Data inválida`
-            }else if (mt===0 && dy===1){
-                data= `${dy} dia`
-                    }else if (mt===0){
-                        data = `${dy} dias`
-                        }else if(mt===1 && dy===1){
-                            data = `${mt} mês e ${dy} dia`
-                            }else if (mt===1) {
-                                data = `${mt} mês e ${dy} dias`
-                                    }else{
-                                    data = `${mt} meses e ${dy} dias`
-                                    }
+    }else if(dy === newDate.getDate() && mt === newDate.getMonth()){
+        data=`Informe data`
+    }else if (mt===0 && dy===1){
+        data= `${dy} dia`
+    }else if (mt===0){
+        data = `${dy} dias`
+    }else if(mt===1 && dy===1){
+        data = `${mt} mês e ${dy} dia`
+    }else if (mt===1) {
+        data = `${mt} mês e ${dy} dias`
+    }else{
+        data = `${mt} meses e ${dy} dias`
+    }
                 
             
     return (
