@@ -6,26 +6,32 @@ const Atividades = ({atividade}) => {
 
    
     let newDate = new Date()
- 
     const [dataAtividade, setDataatividade] = useState(newDate)
    
     let dateInput = new Date(dataAtividade)   
-   
-  
-   var dy = dateInput.getDate()-newDate.getDate();
-   var mt = dateInput.getMonth()-newDate.getMonth();
-   let data ;
+    var dy = (dateInput.getDate()-newDate.getDate())+1;
+    var mt = dateInput.getMonth()-newDate.getMonth();
+    let data ;
+    
 
-   if(dy<0){
+   if(dy===-1){
+    dy=dy;
+   }else if(dy===-2){
+    dy= dy;
+   }else{
     dy = Math.abs(dy)
    }
+
    if(mt<0){
     mt = Math.abs(mt)
    }
-       
-    if(dateInput<newDate){
-        data=`Data inválida`
-    }else if(dy === newDate.getDate() && mt === newDate.getMonth()){
+     
+   
+    if(dy===0 && mt===0){
+        data= `Hoje`
+    }else if(dy===1 && mt===0){
+        data= `Amanhã`
+    }else if(dateInput<newDate){
         data=`Informe data`
     }else if (mt===0 && dy===1){
         data= `${dy} dia`
@@ -33,12 +39,16 @@ const Atividades = ({atividade}) => {
         data = `${dy} dias`
     }else if(mt===1 && dy===1){
         data = `${mt} mês e ${dy} dia`
+    }else if (mt===1 && dy===0) {
+            data = `${mt} mês`
     }else if (mt===1) {
         data = `${mt} mês e ${dy} dias`
+    }else if(mt>1 && dy===0){
+        data = `${mt} meses`
     }else{
         data = `${mt} meses e ${dy} dias`
     }
-                
+     console.log(dy,mt)           
             
     return (
         <>
