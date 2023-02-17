@@ -19,8 +19,11 @@ function App() {
   function handleSavedados(user){
     let newDados = [...dados]
    newDados.push(user)
-   setDados(newDados)    
+   setDados(newDados) 
+   setDados("")   
   }
+
+ 
   
     return (
       <>

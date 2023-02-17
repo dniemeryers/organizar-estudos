@@ -9,9 +9,9 @@ const Atividades = ({atividade}) => {
     const [dataAtividade, setDataatividade] = useState(newDate)
    
     let dateInput = new Date(dataAtividade)   
-    var dy = (dateInput.getDate()-newDate.getDate())+1;
+    var dy = (dateInput.getDate()+1)-(newDate.getDate());
     var mt = dateInput.getMonth()-newDate.getMonth();
-    let data ;
+    let data;
     
 
    if(dy===-1){
@@ -45,10 +45,12 @@ const Atividades = ({atividade}) => {
         data = `${mt} mês e ${dy} dias`
     }else if(mt>1 && dy===0){
         data = `${mt} meses`
+    }else if(mt>1 && dy===1){
+        data = `${mt} meses e ${dy} dia`
     }else{
         data = `${mt} meses e ${dy} dias`
     }
-     console.log(dy,mt)           
+            
             
     return (
         <>
@@ -56,7 +58,7 @@ const Atividades = ({atividade}) => {
             <Container>
                 <div>
                   <Atividade defaultValue={atividade} placeholder="Atividade"></Atividade>
-                  <Data min="2023-02-15" max="2023-12-31"value={dataAtividade} onChange={event => setDataatividade(event.target.value)}type="date"></Data>
+                  <Data min="2023-02-15" max="2023-12-31" value={dataAtividade} onChange={event => setDataatividade(event.target.value)}type="date"></Data>
                 </div>
             <DiasFalta>{data}</DiasFalta>
             </Container>           
