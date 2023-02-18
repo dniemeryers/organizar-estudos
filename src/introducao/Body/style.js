@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 margin-top:-1px;
-padding-top: 20px;
+padding-top: 230px;
 background-color: #010101;
 width: 100%;
 height:auto;
@@ -27,17 +27,32 @@ margin-left 20px;
 `
 
 export const Button = styled.button`
-color:#1c1c1c;
+color:white;
+display:inline;
 background-color:#4a4a4a;
 heigth:30px;
 width:30px;
 font-size:22px;
 font-weight:bolder;
 border-radius:50%;
-margin-left: 10px;
 border:none;
-margin-top:230px;
+margin-left:10px;
 
+
+`
+export const Addmateria = styled.div`
+display:flex;
+flex-direction:row;
+background-color:black;
+width:350px;
+heigth:100px;
+z-index:1000;
+position:fixed;
+padding:30px 30px 30px 0;
+margin-top:160px;
+@media screen and (min-width:1024px){
+  padding-right:1200px
+}
 `
 
 export const Materias = styled.div`
@@ -46,9 +61,10 @@ heigth: 120px;
 width: 120px;
 `
 export const Input = styled.input`
-    background: transparent;
+    background: black;
     flex: 1;
     heigth:50px;
+    width:100px;
     font-size: 22px;
     border: 0;
     color: #FFFFFF;

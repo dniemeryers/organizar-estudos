@@ -5,11 +5,10 @@ export const Container = styled.div`
     position:relative;
     max-width: 80%;
     height: 50px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:auto;
+    margin:20px 0 0 10px;
 `
 
 export const Row = styled.div`
@@ -17,8 +16,6 @@ export const Row = styled.div`
     height:100%;
     padding-top:80px;
     align-items: center;
-    margin:auto;
-    
 `
 
 export const Wrapper = styled.div`
@@ -28,12 +25,9 @@ export const Wrapper = styled.div`
     z-index:1000;
     height: 220px;
     margin-left:0;
-    justify-content: center;
-    align-items: center;
-    margin:auto;
     @media screen and (min-width:1024px){
         width:1500px;
-        left:0px;
+        
     }
     
 `

@@ -12,12 +12,14 @@ border-radius:5px;
 background-color:#4a4a4a;
 
 @media screen and (min-width: 1024px){
+   
     width:350px;
     overflow-x:auto;
 }
 
 `
 export const Container = styled.div`
+
 display:flex;
 justify-content:space-between;
 
