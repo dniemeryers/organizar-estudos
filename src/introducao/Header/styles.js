@@ -19,11 +19,11 @@ export const Row = styled.div`
     align-items: center;
     margin:auto;
     
-`;
+`
 
 export const Wrapper = styled.div`
     background-color: #010101;
-  
+    position:fixed;
     height: 220px;
     margin-left:0;
     justify-content: center;

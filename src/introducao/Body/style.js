@@ -9,6 +9,16 @@ width: 100%;
 height:auto;
 
 `
+export const Container2 = styled.div`
+@media screen and (min-width:1024px){
+   
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+    
+}
+
+`
 
 export const Label = styled.label`
 color:white;
@@ -26,6 +36,8 @@ font-weight:bolder;
 border-radius:50%;
 margin-left: 10px;
 border:none;
+margin-top:300px;
+
 `
 
 export const Materias = styled.div`
@@ -40,5 +52,6 @@ export const Input = styled.input`
     font-size: 22px;
     border: 0;
     color: #FFFFFF;
-    margin-left:20px;
+    margin-left:20px;ks
+    
 `

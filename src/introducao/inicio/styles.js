@@ -1,13 +1,13 @@
 import styled  from 'styled-components';
 
 export const Container = styled.div`
-   
-    
     max-width: 80%;
     height: 120%px;
-    
     align-items: center;
     margin:auto;
+    @media screen and (min-width: 1024px){
+        width:350px;
+    }
     
 `
 
@@ -21,19 +21,19 @@ background-color:#1c1c1c;
     align-items: center;
     margin:auto;
     margin-top:40px;
+   
     
     
-`;
+`
 
 export const Wrapper = styled.div`
     background-color: #010101;
-  
     height: 100vh;
     margin-left:0;
     justify-content: center;
     align-items: center;
     margin:auto;
-    
+   
 `
 
 export const BuscarInputContainer = styled.div`

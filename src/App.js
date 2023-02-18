@@ -20,7 +20,7 @@ function App() {
     let newDados = [...dados]
    newDados.push(user)
    setDados(newDados) 
-   setDados("")   
+   
   }
 
  

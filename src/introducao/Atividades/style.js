@@ -4,13 +4,14 @@ export const Container = styled.div`
 display:flex;
 position:relative;
 justify-content:space-between;
-width:100%;
 
 `
 export const Container2 = styled.div`
 background-color:#1c1c1c;
 margin:10px;
 border-radius:5px;
+
+
 `
 export const Atividade =styled.input`
 color:white;
