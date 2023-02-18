@@ -23,12 +23,18 @@ export const Row = styled.div`
 
 export const Wrapper = styled.div`
     background-color: #010101;
+    displlay:block;
     position:fixed;
+    z-index:1000;
     height: 220px;
     margin-left:0;
     justify-content: center;
     align-items: center;
     margin:auto;
+    @media screen and (min-width:1024px){
+        width:1500px;
+        left:0px;
+    }
     
 `
 
@@ -39,7 +45,6 @@ export const BuscarInputContainer = styled.div`
     border-radius: 8px;
     padding: 2px 5px;
     margin: 0 12px;
-
     display:flex;
 `
 

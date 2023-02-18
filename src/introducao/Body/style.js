@@ -28,7 +28,7 @@ margin-left 20px;
 
 export const Button = styled.button`
 color:#1c1c1c;
-background-color:#4a4a4a
+background-color:#4a4a4a;
 heigth:30px;
 width:30px;
 font-size:22px;
@@ -36,7 +36,7 @@ font-weight:bolder;
 border-radius:50%;
 margin-left: 10px;
 border:none;
-margin-top:300px;
+margin-top:230px;
 
 `
 
@@ -52,6 +52,6 @@ export const Input = styled.input`
     font-size: 22px;
     border: 0;
     color: #FFFFFF;
-    margin-left:20px;ks
+    margin-left:20px;
     
 `

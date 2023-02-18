@@ -1,4 +1,5 @@
 import usuario from '../../assets/minha-conta.png'
+import capa from '../../assets/estudo-ativo.jpg'
 import { Container, Wrapper,  Row, UserPicture,Inputdados, Apresentacao } from './styles';
 
 
@@ -14,7 +15,6 @@ export const Header = ({nome,curso,semestre}) =>{
   
      <Wrapper>
         <Container>
-       
           <Row>
             <div>
             <UserPicture src={usuario} alt="user_default"/>
