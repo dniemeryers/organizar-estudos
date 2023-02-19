@@ -13,8 +13,8 @@ background-color:#4a4a4a;
 
 @media screen and (min-width: 1024px){
    
-    width:350px;
-    overflow-x:auto;
+    width:360px;
+    
 }
 
 `
@@ -24,12 +24,24 @@ display:flex;
 justify-content:space-between;
 
 `
+export const Overflow = styled.div`
+min-height:50px;
+margin-bottom:40px;
+
+@media screen and (min-width: 1024px){
+   
+    height:241px;
+    overflow-x:auto;
+    margin:0;
+}
+
+`
 
 
 export const Input = styled.input`
     background: transparent;
     flex: 1;
-    font-size: 20px;
+    font-size:16px;
     border: 0;
     color: white;
     margin-left:20px;
@@ -37,11 +49,11 @@ export const Input = styled.input`
 export const Input1 = styled.input`
     background: transparent;
     flex: 1;
-    font-size: 20px;
+    font-size: 16px;
     border: 0;
     color: white;
     margin-left:20px;
-    margin-bottom:20px;
+    margin-bottom:8px;
     
 `
 
@@ -79,6 +91,8 @@ background-color:red;
 border-radius:5px;
 border:none;
 font-size:20px;
+position:absolute;
+bottom:5px;
 font-weight:bolder;
 color:white;
 margin-top:10px;

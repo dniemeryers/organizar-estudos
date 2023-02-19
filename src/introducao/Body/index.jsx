@@ -36,14 +36,14 @@ export const Body = ({dados})=>{
             <Header key={index} nome={user.nome} curso={user.curso} semestre={user.semestre}/>
             ))}           
                 <Addmateria>       
-                <Input value={inMateria} onChange={event => setInmateria(event.target.value)} placeholder="Adicionar matéria..."></Input>                
-                <Button onClick={click}>+</Button>
+                    <Input value={inMateria} onChange={event => setInmateria(event.target.value)} placeholder="Adicionar matéria..."></Input>                
+                    <Button onClick={click}>+</Button>
                 </Addmateria>  
             <Container>
-            <Container2>
-                {materia.map((data,index)=>(
-                <Materias key={index}  materia={data} />
-                ))}
+                <Container2>
+                    {materia.map((data,index)=>(
+                    <Materias key={index}  materia={data} />
+                    ))}
                 </Container2>
             </Container>
         </>

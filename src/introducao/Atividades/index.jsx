@@ -7,7 +7,7 @@ const Atividades = ({atividade}) => {
    
     let newDate = new Date()
     const [dataAtividade, setDataatividade] = useState(newDate)
-   
+    
     let dateInput = new Date(dataAtividade)   
     var dy = (dateInput.getDate()+1)-(newDate.getDate());
     var mt = dateInput.getMonth()-newDate.getMonth();
@@ -47,10 +47,13 @@ const Atividades = ({atividade}) => {
         data = `${mt} meses`
     }else if(mt>1 && dy===1){
         data = `${mt} meses e ${dy} dia`
+    }else if(dy===0||mt===0){
+
     }else{
         data = `${mt} meses e ${dy} dias`
     }
-            
+       
+   
             
     return (
         <>

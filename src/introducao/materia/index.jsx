@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 
-import { Materia, Input, Input1, Button, ButtonRemove, Container,Div1,ButtonLimpar } from "./style";
+import { Materia, Overflow, Input, Input1, Button, ButtonRemove, Container,Div1,ButtonLimpar } from "./style";
 import { Atividades } from "../Atividades";
 
 const Materias = ({materia,fechar}) => {
@@ -22,6 +22,7 @@ const Materias = ({materia,fechar}) => {
         setInatividade("")        
     }
 
+
     return(
         <>
             <Materia>
@@ -34,9 +35,11 @@ const Materias = ({materia,fechar}) => {
                         </div>
                     </Div1>
                 </Container>
-                {atividade.map((data2,id)=>(
+                <Overflow>
+                    {atividade.map((data2,id)=>(
                     <Atividades key={id} atividade={data2}/>
-                 ))} 
+                    ))} 
+                </Overflow>
                 <ButtonLimpar onClick={limpar}>Limpar lista</ButtonLimpar>
                 <ButtonRemove onClick={fechar}>x</ButtonRemove>
             </Materia>
