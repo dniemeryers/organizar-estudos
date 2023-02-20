@@ -28,6 +28,16 @@ export const Body = ({dados})=>{
         saveMateria()
        }
 
+       function removeMateria(index) {
+        setMateria(prevMateria => {
+          
+         
+      const newMateria = [...prevMateria];
+          newMateria.splice(index, 1);
+          return newMateria;
+        });
+      }
+        
 
     return (
         <>  
@@ -43,7 +53,7 @@ export const Body = ({dados})=>{
             <Container>
                 <Container2>
                     {materia.map((data,index)=>(
-                    <Materias key={index}  materia={data} />
+                    <Materias key={index}  materia={data} removeMateria={()=>removeMateria(index)} index={index} />
                     ))}
                    
                 </Container2>

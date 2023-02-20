@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Materia, Overflow, Input, Input1, Button, ButtonRemove, Container,Div1,ButtonLimpar } from "./style";
 import { Atividades } from "../Atividades";
 
-const Materias = ({materia,remove}) => {
+const Materias = ({materia, removeMateria, index}) => {
 
    
 
@@ -41,7 +41,7 @@ const Materias = ({materia,remove}) => {
                     ))} 
                 </Overflow>
                 <ButtonLimpar onClick={limpar}>Limpar lista</ButtonLimpar>
-                <ButtonRemove onClick={remove}>x</ButtonRemove>
+                <ButtonRemove onClick={removeMateria}>x</ButtonRemove>
             </Materia>
         </>
     )
