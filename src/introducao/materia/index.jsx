@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Materia, Overflow, Input, Input1, Button, ButtonRemove, Container,Div1,ButtonLimpar } from "./style";
 import { Atividades } from "../Atividades";
 
-const Materias = ({materia,fechar}) => {
+const Materias = ({materia,remove}) => {
 
-    var id = id+1;
+   
 
     const [inAtividade, setInatividade] = useState("")
     const [atividade, setAtividade] = useState([])
@@ -36,12 +36,12 @@ const Materias = ({materia,fechar}) => {
                     </Div1>
                 </Container>
                 <Overflow>
-                    {atividade.map((data2,id)=>(
-                    <Atividades key={id} atividade={data2}/>
+                    {atividade.map((data2,index)=>(
+                    <Atividades key={index} atividade={data2}/>
                     ))} 
                 </Overflow>
                 <ButtonLimpar onClick={limpar}>Limpar lista</ButtonLimpar>
-                <ButtonRemove onClick={fechar}>x</ButtonRemove>
+                <ButtonRemove onClick={remove}>x</ButtonRemove>
             </Materia>
         </>
     )

@@ -22,6 +22,7 @@ export const Container2 = styled.div`
 
 `
 
+
 export const Label = styled.label`
 color:white;
 font-size:20px;
@@ -46,7 +47,7 @@ export const Addmateria = styled.div`
 display:flex;
 flex-direction:row;
 background-color:black;
-width:350px;
+width:500px;
 heigth:100px;
 z-index:1000;
 position:fixed;
@@ -72,4 +73,12 @@ export const Input = styled.input`
     color: #FFFFFF;
     margin-left:20px;
     
+`
+
+export const Removetudo = styled.button`
+background-color:red;
+color:white;
+font-weight:bolder;
+width:110px;
+margin-left:60px;
 `
