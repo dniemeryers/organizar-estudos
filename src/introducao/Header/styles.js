@@ -20,11 +20,18 @@ export const Row = styled.div`
 
 export const Wrapper = styled.div`
     background-color: #010101;
-    displlay:block;
+    display:flex;
+
     position:fixed;
     z-index:1000;
     height: 220px;
     margin-left:0;
+    @media screen and (max-width: 400px){
+        display:flex;
+        flex-direction:column;
+        height:300px;
+        
+    }
     @media screen and (min-width:1024px){
         width:1500px;
         
@@ -103,4 +110,28 @@ border:none;
 position:absolute;
 left:-25px;
 top:10px;
+`
+
+
+export const Mensagem = styled.label`
+color:white;
+font-size:16px;
+padding-left:10px;
+margin-top:10px;
+
+@media screen and (min-width:1024px){
+    position:fixed;
+    right:50px;
+    top:15px;
+    font-size:22px;
+    
+}
+`
+
+export const Clock = styled.label`
+background-color:white;
+color:black;
+position:fixed;
+right:0px;
+top:0px;
 `

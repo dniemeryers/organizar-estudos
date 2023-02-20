@@ -36,7 +36,7 @@ export const Body = ({dados})=>{
             <Header key={index} nome={user.nome} curso={user.curso} semestre={user.semestre}/>
             ))}                   
             <Addmateria>       
-                <Input value={inMateria} onChange={event => setInmateria(event.target.value)} placeholder="Adicionar matéria..."></Input>                
+                <Input value={inMateria} onChange={event => setInmateria(event.target.value)} placeholder="Add matéria..."></Input>                
                 <Button onClick={click}>+</Button>
                 <Removetudo onClick={limparTudo}>Limpar tudo</Removetudo>
             </Addmateria>  

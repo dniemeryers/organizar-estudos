@@ -8,6 +8,11 @@ background-color: #010101;
 width: 100%;
 height:auto;
 
+@media screen and (max-width:400px){
+  padding-top: 290px;
+
+}
+
 
 `
 export const Container2 = styled.div`
@@ -48,11 +53,17 @@ display:flex;
 flex-direction:row;
 background-color:black;
 width:500px;
-heigth:100px;
+heigth:70px;
 z-index:1000;
 position:fixed;
 padding:30px 30px 30px 0;
 margin-top:160px;
+@media screen and (max-width: 400px){
+margin-top:200px;
+width:350px;
+
+
+}
 @media screen and (min-width:1024px){
   padding-right:1200px
 }
@@ -81,4 +92,8 @@ color:white;
 font-weight:bolder;
 width:110px;
 margin-left:60px;
+@media screen and (max-width: 400px){
+  margin-left:30px;
+  width:90px;
+  font-size:12px;
 `
