@@ -58,21 +58,18 @@ function Inicio({onAddUser}) {
       <Container>
           <H1>Organizando os Estudos</H1>
           <Row>
-          <div>
+            <div>
               {image ? (
-                <UserPicture src={image} onChange={event => setNome(event.target.value)} alt="user_image" />
+                <UserPicture src={image} alt="user_image" />
               ) : (
                 <UserPicture src={usuario} alt="user_default" />
               )}
-              <Addimagen
-              type="file"
-              id="userImage"
-              accept="image/*"
-              onChange={handleImageChange}
-              
-              />
-                
-                  
+              <Addimagen  
+                  type="file"
+                  id="userImage"
+                  accept="image/*"
+                  onChange={handleImageChange}>
+              </Addimagen>
             </div>
             <Input value={nome} onChange={event => setNome(event.target.value)} placeholder='Informe seu nome...'/>
             <Input value={curso} onChange={event => setCurso(event.target.value)}placeholder='Informe o nome do curso... '/>

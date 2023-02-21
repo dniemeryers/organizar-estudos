@@ -95,6 +95,7 @@ margin-left:-40px;
 font-size:20px;
 font-weight:bold;
 border:none;
+
 `
 export const Salvar = styled.button`
 width:130px;
