@@ -4,7 +4,7 @@ import { Container, Wrapper,  Row, UserPicture,Inputdados, Apresentacao,Mensagem
 
 
 
-export const Header = ({nome,curso,semestre}) =>{
+export const Header = ({nome,curso,semestre,image}) =>{
   
  let newDate = new Date();
  
@@ -44,7 +44,11 @@ export const Header = ({nome,curso,semestre}) =>{
         <Container>
           <Row>
             <div>
-            <UserPicture src={usuario} alt="user_default"/>
+            {image ? (
+                <UserPicture src={image} alt="user_image" />
+              ) : (
+                <UserPicture src={usuario} alt="user_default" />
+              )}
             </div>
             <Apresentacao>
             <Inputdados defaultValue={nome} placeholder={'Informe seu nome...'}/>

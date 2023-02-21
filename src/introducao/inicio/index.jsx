@@ -10,7 +10,7 @@ function Inicio({onAddUser}) {
     const [nome, setNome] = useState('')
     const [curso, setCurso] = useState('')
     const [semestre, setSemestre] = useState('')
-
+    const [image, setImage] = useState(null);
    
 
     const navigate = useNavigate();
@@ -20,7 +20,7 @@ function Inicio({onAddUser}) {
     }
 
     function handleSave(){
-      const data = {nome, curso, semestre}
+      const data = {nome, curso, semestre,image}
       onAddUser(data)     
     }
 
@@ -34,7 +34,23 @@ function Inicio({onAddUser}) {
       setNome('')
       setCurso('')
       setSemestre('')
+      setImage(null);
     }
+    function handleImageChange(event) {
+      const file = event.target.files[0];
+      if (!file) {
+        return;
+      }
+
+      const reader = new FileReader();
+    reader.readAsDataURL(file);
+
+    reader.onload = () => {
+      setImage(reader.result);
+    };
+  }
+
+    
        
   return (
   <>   
@@ -42,9 +58,21 @@ function Inicio({onAddUser}) {
       <Container>
           <H1>Organizando os Estudos</H1>
           <Row>
-            <div>
-              <UserPicture src={usuario} alt="user_default"/>
-              <Addimagen>+</Addimagen>
+          <div>
+              {image ? (
+                <UserPicture src={image} onChange={event => setNome(event.target.value)} alt="user_image" />
+              ) : (
+                <UserPicture src={usuario} alt="user_default" />
+              )}
+              <Addimagen
+              type="file"
+              id="userImage"
+              accept="image/*"
+              onChange={handleImageChange}
+              
+              />
+                
+                  
             </div>
             <Input value={nome} onChange={event => setNome(event.target.value)} placeholder='Informe seu nome...'/>
             <Input value={curso} onChange={event => setCurso(event.target.value)}placeholder='Informe o nome do curso... '/>

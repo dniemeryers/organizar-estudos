@@ -70,6 +70,7 @@ export const MenuRight = styled.a`
 export const UserPicture = styled.img`
     width: 150px;
     height: 150px;
+    border-radius:50%;
     
    
     
@@ -86,7 +87,7 @@ export const Input = styled.input`
     margin-left:20px;
 
 `
-export const Addimagen = styled.button`
+export const Addimagen = styled.input`
 height:30px;
 width:30px;
 border-radius:50%;

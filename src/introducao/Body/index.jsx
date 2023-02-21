@@ -43,7 +43,7 @@ export const Body = ({dados})=>{
         <>  
             <Header/> 
             {dados.map((user, index)=>(
-            <Header key={index} nome={user.nome} curso={user.curso} semestre={user.semestre}/>
+            <Header key={index} nome={user.nome} curso={user.curso} semestre={user.semestre} image={user.image}/>
             ))}                   
             <Addmateria>       
                 <Input value={inMateria} onChange={event => setInmateria(event.target.value)} placeholder="Add matéria..."></Input>                
