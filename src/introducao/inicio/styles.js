@@ -94,7 +94,7 @@ width:28px;
 height:30px;
 border-radius:50%;
 margin-top:-15px;
-vertical-align: baseline;
+margin-bottom:10px;
 margin-left:110px;
 z-index:10;
 
@@ -102,10 +102,10 @@ z-index:10;
 export const Text = styled.label`
 width:1px;
 margin-top:-1px;
-margin-left:7px;
+margin-left:6px;
 font-size:20px;
 font-weight:bold;
-
+z-index:9;
 `
 export const Div = styled.div`
 display:flex;
@@ -116,7 +116,7 @@ flex-direction:row;
 export const Addimagen = styled.input`
 width:0px;
 padding-left:30px;
-
+z-index:12;
 
 `
 export const Salvar = styled.button`
