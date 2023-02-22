@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useNavigate } from "react-router-dom";
 import usuario from '../../assets/minha-conta.png'
-import { Container, Wrapper,  Row, UserPicture, Input, Addimagen, Salvar,Buttons,H1} from './styles';
+import { Container, Wrapper,  Row, UserPicture, Input, Addimagen, Salvar,Buttons,H1,File,Text} from './styles';
 
 
 
@@ -64,12 +64,17 @@ function Inicio({onAddUser}) {
               ) : (
                 <UserPicture src={usuario} alt="user_default" />
               )}
+              <File>
+              <Text>+</Text>
               <Addimagen  
                   type="file"
                   id="userImage"
                   accept="image/*"
-                  onChange={handleImageChange}>
+                  onChange={handleImageChange}
+                  emptyText = 'a'
+                  >
               </Addimagen>
+              </File>
             </div>
             <Input value={nome} onChange={event => setNome(event.target.value)} placeholder='Informe seu nome...'/>
             <Input value={curso} onChange={event => setCurso(event.target.value)}placeholder='Informe o nome do curso... '/>
