@@ -27,7 +27,7 @@ function App() {
   
     return (
       <>
-        <Router> 
+        <Router basename={process.env.PUBLIC_URL}> 
         <Routes>
             <Route path="/"       element={<Inicio onAddUser={handleSavedados}/>}/>
             <Route path="/Inicio" element={<Inicio onAddUser={handleSavedados}/>}/>
