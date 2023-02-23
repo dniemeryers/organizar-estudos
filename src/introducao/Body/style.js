@@ -20,7 +20,7 @@ export const Container2 = styled.div`
    
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 390px;
+  grid-auto-rows: 375px;
   
     
 }

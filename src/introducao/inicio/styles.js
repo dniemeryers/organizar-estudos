@@ -21,6 +21,7 @@ background-color:#1c1c1c;
     align-items: center;
     margin:auto;
     margin-top:40px;
+    box-shadow: white 3px 3px 3px ;
    
     
     
@@ -71,6 +72,10 @@ export const UserPicture = styled.img`
     width: 150px;
     height: 150px;
     border-radius:50%;
+    border: 7px solid white;
+    margin:-1px;
+    
+    
     
    
     
@@ -88,25 +93,23 @@ export const Input = styled.input`
 
 `
 export const File = styled.div`
-background-color:white;
 display:flex;
-width:28px;
-height:30px;
-border-radius:50%;
-margin-top:-15px;
+
+margin-top:-55px;
 margin-bottom:10px;
-margin-left:110px;
-z-index:10;
+margin-left:120px;
+
 
 `
-export const Text = styled.label`
-width:1px;
-margin-top:-1px;
-margin-left:6px;
-font-size:20px;
-font-weight:bold;
-z-index:9;
+export const Text = styled.img`
+width:30px;
+height:30px;
+border-radius:50%;
+border: 4px solid white;
+
+
 `
+
 export const Div = styled.div`
 display:flex;
 flex-direction:row;
@@ -115,8 +118,19 @@ flex-direction:row;
 
 export const Addimagen = styled.input`
 width:0px;
-padding-left:30px;
-z-index:12;
+margin-top:6px;
+padding-left:38px;
+margin-left:-38px;
+margin-top:-3px;
+padding-top:6px;
+@media screen and (max-width: 400px){
+    width:0px;
+    margin:0;
+        margin-left:-5px;
+        margin-top:3px;
+        padding-left:33px;
+       
+    }
 
 `
 export const Salvar = styled.button`

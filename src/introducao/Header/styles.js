@@ -3,19 +3,21 @@ import styled  from 'styled-components';
 export const Container = styled.div`
    
     position:relative;
-    max-width: 80%;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin:20px 0 0 10px;
+    
 `
 
 export const Row = styled.div`
     display:flex;
-    height:100%;
+    height:250px;
     padding-top:80px;
     align-items: center;
+    
+    
 `
 
 export const Wrapper = styled.div`
@@ -26,6 +28,7 @@ export const Wrapper = styled.div`
     z-index:1000;
     height: 220px;
     margin-left:0;
+    
     @media screen and (max-width: 400px){
         display:flex;
         flex-direction:column;
@@ -34,6 +37,7 @@ export const Wrapper = styled.div`
     }
     @media screen and (min-width:1024px){
         width:1500px;
+     
         
     }
     
@@ -73,6 +77,8 @@ export const UserPicture = styled.img`
     width: 150px;
     height: 150px;
     border-radius:50%;
+    border: 4px solid white;
+    z-index:10000;
     
    
     

@@ -10,6 +10,10 @@ padding-top:10px;
 padding-bottom:5px;
 border-radius:5px;
 background-color:#4a4a4a;
+box-shadow: 4px 4px 4px white;
+
+
+ 
 
 @media screen and (min-width: 1024px){
    
@@ -28,9 +32,10 @@ export const Overflow = styled.div`
 min-height:50px;
 margin-bottom:40px;
 
+
 @media screen and (min-width: 1024px){
    
-    height:241px;
+    height:235px;
     overflow-x:auto;
     margin:0;
 }

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useNavigate } from "react-router-dom";
 import usuario from '../../assets/minha-conta.png'
-import upload from '../../assets/minha-conta.png'
+import upload from '../../assets/foto.jpg'
 import { Container, Wrapper,  Row, UserPicture, Input, Addimagen, Salvar,Buttons,H1,File,Text} from './styles';
 
 
@@ -66,7 +66,7 @@ function Inicio({onAddUser}) {
                 <UserPicture src={usuario} alt="user_default" />
               )}
               <File>
-              <Text>+</Text>
+              <Text src={upload}/>
               <Addimagen  
                   type="file"
                   id="userImage"
