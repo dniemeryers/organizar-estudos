@@ -14,11 +14,7 @@ const Atividades = ({atividade}) => {
     let data;
     
 
-   if(dy===-1){
-    dy=dy;
-   }else if(dy===-2){
-    dy= dy;
-   }else{
+   if(dy<0){
     dy = Math.abs(dy)
    }
 
