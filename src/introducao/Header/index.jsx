@@ -1,5 +1,4 @@
 import usuario from '../../assets/minha-conta.png'
-import capa from '../../assets/estudo-ativo.jpg'
 import { Container, Wrapper,  Row, UserPicture,Inputdados, Apresentacao,Mensagem} from './styles';
 
 
@@ -40,7 +39,7 @@ export const Header = ({nome,curso,semestre,image}) =>{
   return (<>
   
      <Wrapper>
-           <Mensagem>{`Olá Aluno hoje é: ${newDate.getDate()} de ${mes} de ${newDate.getFullYear()}`}</Mensagem>
+           <Mensagem>{`Olá ${nome} hoje é: ${newDate.getDate()} de ${mes} de ${newDate.getFullYear()}`}</Mensagem>
         <Container>
           <Row>
             <div>

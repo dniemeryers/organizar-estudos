@@ -12,7 +12,7 @@ export const Container = styled.div`
 `
 
 export const Row = styled.div`
-background-color:#1c1c1c;
+    background-color:#1c1c1c;
     display:flex;
     flex-direction: column;
     height:100%;
@@ -75,10 +75,6 @@ export const UserPicture = styled.img`
     border: 7px solid white;
     margin:-1px;
     
-    
-    
-   
-    
 `
 
 export const Input = styled.input`
@@ -93,66 +89,59 @@ export const Input = styled.input`
 
 `
 export const File = styled.div`
-display:flex;
-
-margin-top:-55px;
-margin-bottom:10px;
-margin-left:120px;
+    display:flex;
+    margin-top:-55px;
+    margin-bottom:10px;
+    margin-left:120px;
 
 
 `
 export const Text = styled.img`
-width:30px;
-height:30px;
-border-radius:50%;
-border: 4px solid white;
-
-
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    border: 4px solid white;
 `
 
 export const Div = styled.div`
-display:flex;
-flex-direction:row;
-
+    display:flex;
+    flex-direction:row;
 `
 
 export const Addimagen = styled.input`
-width:0px;
-margin-top:6px;
-padding-left:38px;
-margin-left:-38px;
-margin-top:-3px;
-padding-top:6px;
-@media screen and (max-width: 400px){
     width:0px;
-    margin:0;
-        margin-left:-5px;
-        margin-top:3px;
-        padding-left:33px;
-       
+    margin-top:6px;
+    padding-left:38px;
+    margin-left:-38px;
+    margin-top:-3px;
+    padding-top:6px;
+        @media screen and (max-width: 400px){
+            width:0px;
+            margin:0;
+            margin-left:-5px;
+            margin-top:3px;
+            padding-left:33px;
     }
-
 `
 export const Salvar = styled.button`
-width:130px;
-height:50px;
-backgrund-color:#6d6d6d;
-font-size:22px;
-font-weight:bold;
-border:none;
-border-radius:10px;
+    width:130px;
+    height:50px;
+    backgrund-color:#6d6d6d;
+    font-size:22px;
+    font-weight:bold;
+    border:none;
+    border-radius:10px;
 `
 export const Buttons = styled.div`
-width:100%;
-display:flex;
-justify-content:space-around;
-padding:20px;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
 `
 export const H1 = styled.h1`
-color white;
-font-size:22px;
-padding-top:20px;
-
-margin:0;
-text-align:center;
+    color: white;
+    font-size:22px;
+    padding-top:20px;
+    margin:0;
+    text-align:center;
 `
