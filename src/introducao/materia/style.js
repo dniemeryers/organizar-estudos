@@ -10,18 +10,11 @@ padding-top:10px;
 padding-bottom:5px;
 border-radius:5px;
 background-color:#4a4a4a;
-box-shadow: 4px 4px 4px white;
-
-
-
- 
-
-@media screen and (min-width: 1024px){
-   
-    width:360px;
+box-shadow: 0px 0px 6px 3px white;
     
+    @media screen and (min-width: 1024px){
+    width:360px;
 }
-
 `
 export const Container = styled.div`
 
@@ -73,13 +66,14 @@ font-weight:bolder;
 border-radius:50%;
 margin-left: 10px;
 border:none;
+   
 `
 export const ButtonRemove = styled.button`
 color:white;
 position:absolute;
 top:0;
 right:0;
-background-color:red;
+background-color:gray;
 font-size:22px;
 heigth:20px;
 width:30px;
@@ -87,13 +81,17 @@ font-weight:bolder;
 border-radius:5px;
 margin-left: 10px;
 border:none;
+    &:hover{
+         background-color:red;
+         scale:1.2;
+}
 `
 export const Div1 = styled.div`
 position:relative;
 justify-content:space-beteween;
 `
 export const ButtonLimpar = styled.button`
-background-color:red;
+background-color:gray;
 border-radius:5px;
 border:none;
 font-size:20px;
@@ -103,5 +101,9 @@ font-weight:bolder;
 color:white;
 margin-top:10px;
 margin-left:13px;
+  &:hover{
+    background-color:red;
+    scale:1.2;
+  }
 `
 

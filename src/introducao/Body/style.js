@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 margin-top:-1px;
-padding-top: 230px;
+padding-top: 245px;
 background-color: #010101;
 width: 100%;
 height:auto;
@@ -57,7 +57,7 @@ heigth:70px;
 z-index:1000;
 position:fixed;
 padding:30px 30px 30px 0;
-margin-top:160px;
+margin-top:170px;
 @media screen and (max-width: 400px){
 margin-top:200px;
 width:350px;

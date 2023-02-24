@@ -79,6 +79,10 @@ export const UserPicture = styled.img`
     border-radius:50%;
     border: 4px solid white;
     z-index:10000;
+    margin-left:10px;
+    margin-top:10px;
+    margin-right:10px;
+    box-shadow: 0px 0px 4px 3px gray;
     
    
     

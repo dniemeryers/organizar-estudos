@@ -22,7 +22,7 @@ export const Row = styled.div`
     align-items: center;
     margin:auto;
     margin-top:40px;
-    box-shadow: white 3px 3px 3px ;
+    box-shadow: 0px 0px 5px 6px white;
    
     
     
@@ -75,15 +75,14 @@ export const UserPicture = styled.img`
     border-radius:50%;
     border: 7px solid white;
     margin:-1px;
-    
+    box-shadow: 0px 0px 5px 6px gray;
 `
 
 export const Input = styled.input`
     background-color: transparent;
     flex: 1;
     font-size: 22px;
-    
-    padding:20px 0 30px 0;
+    padding:10px 0 10px 0;
     border: 0;
     color: #FFFFFF;
     margin-left:20px;
@@ -94,6 +93,7 @@ export const File = styled.div`
     margin-top:-55px;
     margin-bottom:10px;
     margin-left:120px;
+    padding-bottom:15px;
 
 
 `
@@ -138,6 +138,7 @@ export const Buttons = styled.div`
     display:flex;
     justify-content:space-around;
     padding:20px;
+    padding-top:60px;
 `
 export const H1 = styled.h1`
     color: white;
