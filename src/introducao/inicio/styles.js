@@ -12,6 +12,7 @@ export const Container = styled.div`
 `
 
 export const Row = styled.div`
+    -webkit-appearance: none;
     background-color:#1c1c1c;
     display:flex;
     flex-direction: column;
