@@ -1,9 +1,9 @@
 
 import {
-  BrowserRouter as Routes,
+  BrowserRouter as Router,
+  Routes,
   Route,
-  HashRouter,
-  BrowserRouter,
+  
   
 } from "react-router-dom";
 
@@ -28,14 +28,14 @@ function App() {
   
     return (
       <>
-        <BrowserRouter> 
+        <Router> 
         <Routes>
             <Route path="/"       element={<Inicio onAddUser={handleSavedados}/>}/>
             <Route path="/Inicio" element={<Inicio onAddUser={handleSavedados}/>}/>
             <Route path="/Body"   element={<Body dados={dados}/>}/>
             <Route path="/Header" element={<Header/>}/>
           </Routes >
-        </BrowserRouter>       
+        </Router>       
       </>
     );
   }
