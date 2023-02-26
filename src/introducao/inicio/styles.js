@@ -72,10 +72,11 @@ export const MenuRight = styled.a`
 export const UserPicture = styled.img`
     width: 150px;
     height: 150px;
+    padding:0px;
     border-radius:50%;
-    border: 7px solid white;
+    border: 4px solid white;
     margin:-1px;
-    box-shadow: 0px 0px 5px 6px gray;
+    
 `
 
 export const Input = styled.input`
@@ -101,7 +102,7 @@ export const Text = styled.img`
     width:30px;
     height:30px;
     border-radius:50%;
-    border: 4px solid white;
+    border: 2px solid white;
 `
 
 export const Div = styled.div`
@@ -127,11 +128,13 @@ export const Addimagen = styled.input`
 export const Salvar = styled.button`
     width:130px;
     height:50px;
-    backgrund-color:#6d6d6d;
+    color:white;
+    background:#1c1c1c;
     font-size:22px;
     font-weight:bold;
     border:none;
     border-radius:10px;
+    box-shadow: 0px 0px 8px 2px white;
 `
 export const Buttons = styled.div`
     width:100%;

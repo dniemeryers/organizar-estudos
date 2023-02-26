@@ -23,13 +23,12 @@ export const Row = styled.div`
 export const Wrapper = styled.div`
     background-color: #010101;
     display:flex;
-
     position:fixed;
     z-index:1000;
     height: 220px;
-    margin-left:0;
     
-    @media screen and (max-width: 400px){
+    
+    @media screen and (max-width: 1024px){
         display:flex;
         flex-direction:column;
         height:300px;
@@ -127,15 +126,14 @@ top:10px;
 export const Mensagem = styled.label`
 color:white;
 font-size:16px;
-padding-left:10px;
 margin-top:10px;
+text-align:center;
 
 @media screen and (min-width:1024px){
     position:fixed;
     right:50px;
     top:15px;
-    font-size:22px;
-    
+    font-size:22px; 
 }
 `
 

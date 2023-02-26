@@ -8,7 +8,7 @@ background-color: #010101;
 width: 100%;
 height:auto;
 
-@media screen and (max-width:400px){
+@media screen and (max-width:1024px){
   padding-top: 290px;
 
 }
@@ -58,15 +58,13 @@ z-index:1000;
 position:fixed;
 padding:30px 30px 30px 0;
 margin-top:170px;
-@media screen and (max-width: 400px){
-margin-top:200px;
-width:350px;
-
-
-}
-@media screen and (min-width:1024px){
-  padding-right:1200px
-}
+  @media screen and (max-width: 1024px){
+    margin-top:200px;
+    width:350px;
+  }
+  @media screen and (min-width:1024px){
+    padding-right:1200px
+  }
 `
 
 export const Materias = styled.div`

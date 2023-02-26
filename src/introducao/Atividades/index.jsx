@@ -11,7 +11,8 @@ const Atividades = ({atividade}) => {
     let dateInput = new Date(dataAtividade)   
     var dy = (dateInput.getDate()+1)-(newDate.getDate());
     var mt = dateInput.getMonth()-newDate.getMonth();
-    let data;
+    let data = `Informe data`;
+    console.log(dy)
     
 
    if(dy<0){
@@ -49,7 +50,7 @@ const Atividades = ({atividade}) => {
         data = `${mt} meses e ${dy} dias`
     }
        
-   
+    console.log(data)
             
     return (
         <>

@@ -33,7 +33,7 @@ export const Atividade =styled.input`
 color:black;
 background-color:transparent;
 border:none;
-width:100px;
+width:90px;
 font-weight:bolder;
 font-size:12px;
 margin:0 5px 0 5px;
